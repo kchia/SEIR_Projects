@@ -1,8 +1,8 @@
-#Project 1 - Golden Girls Trivia
+# Project 1 - Golden Girls Trivia
 
 Pre-load your app with some questions and answers. Test the user's wits & knowledge with whatever-the-heck you know about (so you can actually win). Guess answers, have the computer tell you how right you are!
 
-###Housekeeping Items:
+### Housekeeping Items:
 15 questions at 100 points apiece
 
 Award them a personality at the end based on number of points earned
@@ -13,7 +13,7 @@ Award them a personality at the end based on number of points earned
 
 Allow them to play again or exit
 
-###Questions: 
+### Questions: 
 1. What is the name of the retirement home where Sophia stayed?
  * Shady Business
  * Shaded Pines
