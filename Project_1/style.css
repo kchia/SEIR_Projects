@@ -1,0 +1,38 @@
+/* From Google */
+/* font-family: 'Charm', cursive; */
+/* font-family: 'Abril Fatface', cursive; */
+
+html {
+    background: url(images/31338.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+}
+
+h1 {
+    font-family: 'Charm', cursive;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+p {
+    font-family: "Abril Fatface", cursive;
+    text-align: center;
+    font-size: 24px;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+}
+
+a {
+    font-family: "Abril Fatface", cursive;
+    text-align: left;
+    font-size: 10px;
+    text-decoration: none;
+    color: green;
+}
