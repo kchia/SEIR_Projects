@@ -7,10 +7,10 @@ Pre-load your app with some questions and answers. Test the user's wits & knowle
 
 Award them a personality at the end based on number of points earned:
 
-*0-300: Rose - What a ditz! Did you even watch the show?
-*400-700: Blanche - Well, some people are only good at one thing, and this ain’t it for you.
-*800-1100: Sophia - While you have a sharp wit, it wasn’t quite sharp enough for Golden Girls Trivia!
-*1200-1500: Dorothy - Well, you’ve certainly got the brains to be a substitute teacher! Congratulazioni!
+* 0-300: Rose - What a ditz! Did you even watch the show?
+* 400-700: Blanche - Well, some people are only good at one thing, and this ain’t it for you.
+* 800-1100: Sophia - While you have a sharp wit, it wasn’t quite sharp enough for Golden Girls Trivia!
+* 1200-1500: Dorothy - Well, you’ve certainly got the brains to be a substitute teacher! Congratulazioni!
 
 Allow them to play again or exit
 
