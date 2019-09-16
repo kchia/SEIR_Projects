@@ -18,6 +18,22 @@ h1 {
     text-shadow: 2px 2px 4px #000000;
 }
 
+h2 {
+    font-family: 'Charm', cursive;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+h3 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
 p {
     font-family: "Abril Fatface", cursive;
     text-align: center;
@@ -27,6 +43,19 @@ p {
 button {
     display: block;
     margin: 0 auto;
+    padding: 5px 12px;
+    border: 1.5px solid #65BF3E;
+    border-radius: 2px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Abril Fatface',sans-serif;
+    font-size: 20px;
+    color:#65BF3E;
+    text-align: center;
+}
+button:hover{
+    color:#FFC300;
+    border: 1.5px solid #FFC300;
 }
 
 a {
@@ -34,5 +63,34 @@ a {
     text-align: left;
     font-size: 10px;
     text-decoration: none;
-    color: green;
+    color: #65BF3E;
+}
+
+#credit {
+    font-family: "Abril Fatface", cursive;
+    text-align: left;
+    font-size: 10px;
+    text-decoration: none;
+    margin: 0 0 0 300;
+    color: white;
+    position: absolute;    
+}
+
+#modal {
+    background-color: rgba(101, 191, 62, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    overflow: auto;
+    display: none;
+}
+
+#modal-box {
+    background-color: #FFC300;
+    height: 350px;
+    width: 550px;
+    margin: 150px auto;
 }
