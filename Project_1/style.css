@@ -10,7 +10,7 @@ html {
     background-size: cover; 
 }
 
-h1 {
+h1, header {
     font-family: 'Charm', cursive;
     font-size: 50px;
     text-align: center;
@@ -103,4 +103,24 @@ a {
     width: 650px;
     margin: 150px auto;
     padding: 0 25px;
+}
+
+.questions button {
+    display: block;
+    margin: 25px;
+}
+
+.trivia {
+    display: inline-flex;
+    justify-content: center;
+}
+
+.questions {
+    flex: 1;
+}
+
+#triviaQs {
+    background-color: #FFC300;
+    font-size: 35px;
+    flex-wrap: wrap;
 }
