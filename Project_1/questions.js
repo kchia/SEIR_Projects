@@ -60,15 +60,158 @@ new Questions (
     "Her roommate died", 
     "The facility was shut down", 
     "buttonB",
-    "It burned down")
+    "that it burned down"),
+
+new Questions (
+    "./images/GG_3.jpg",
+    "3",
+    "What tastes great if you eat it while holding your nose?", 
+    "Herring Krispies", 
+    "Herring Chunkies", 
+    "Herring Tarts", 
+    "Herring Crisps", 
+    "buttonA",
+    "Herring Krispies"),
+
+new Questions (
+    "./images/GG_2.jpg",
+    "4",
+    "Complete this lyric: Miami, Miami, you’ve got style…", 
+    "...You’re cuter than an intrauterine.", 
+    "...So I'll say it thrice.", 
+    "...Palm trees, sunshine, great sand by the mile.", 
+    "...Blue skies, sunshine, white sand by the mile.", 
+    "buttonD",
+    "...Blue skies, sunshine, white sand by the mile"),
+    
+new Questions (
+    "./images/GG_2.jpg",
+    "5",
+    "Finish this quote: “There are two things in this world a Sicilian knows. When pasta sticks to a wall, it’s done…", 
+    "...When a body sticks to cement, it's dead.", 
+    "...When a body sticks to the ground, it's dead", 
+    "...When a body sticks to its clothes, it's dead.", 
+    "...When a body sticks to the tennis court, it's dead.", 
+    "buttonA",
+    "...When a body sticks to cement, it's dead"),
+
+new Questions (
+    "./images/GG_3.jpg",
+    "6",
+    "What curse did Sophia put on her late husband's best friend, Max?", 
+    "That he tripped over his shoes every morning", 
+    "That his socks would forever fall down.", 
+    "That all his wives would cheat on his", 
+    "That his ears would never pop on an airplane", 
+    "buttonB",
+    "that his socks would forever fall down"),
+
+new Questions (
+    "./images/GG_3.jpg",
+    "7",
+    "What profession did Sophia's brother/Dorothy's uncle Angelo falsely claim?", 
+    "Vacuum Salesman", 
+    "Entrepreneur", 
+    "Lawyer", 
+    "Priest", 
+    "buttonD",
+    "priest"),
+
+new Questions (
+    "./images/GG_3.jpg",
+    "8",
+    "How did Rose's late husband Charlie die?", 
+    "Of old age", 
+    "In a car accident", 
+    "Of a heart attack during an act of intimacy", 
+    "While serving the country", 
+    "buttonC",
+    "a heart attack during an act of intimacy"),
+
+new Questions (
+    "./images/GG_3.jpg",
+    "9",
+    "What nickname did Sophia’s late husband tell her to call Dorothy that only he would know?", 
+    "Moose", 
+    "Spumoni Face", 
+    "Tortellini", 
+    "Spaghetti Face", 
+    "buttonB",
+    "Spumoni Face"),
+
+new Questions (
+    "./images/GG_3.jpg",
+    "10",
+    "Actor Harold Gould played Rose's boyfriend twice! What were their names?", 
+    "Arnie/Miles", 
+    "Arnold/Milton", 
+    "Arnie/Milton", 
+    "Arnold/Miles", 
+    "buttonA",
+    "Arnie/Miles"),
+
+new Questions (
+    "./images/GG_3.jpg",
+    "11",
+    "What type of prize animal did Rose's Uncle Higgeblotter leave her upon his death?", 
+    "Horse", 
+    "Goat", 
+    "Sheep", 
+    "Pig", 
+    "buttonD",
+    "that Baby was a pig"),
+
+new Questions (
+    "./images/GG_3.jpg",
+    "12",
+    "Who played the officer who got shot during an undercover sting in which the Girls helped?", 
+    "Burt Reynolds", 
+    "George Clooney", 
+    "Mario Lopez", 
+    "Leslie Nielsen", 
+    "buttonB",
+    "George Clooney"),
+
+new Questions (
+    "./images/GG_3.jpg",
+    "13",
+    "What item does Dorothy find under her bed that th housekeeper Marguerite says is to help her get restful sleep?", 
+    "A painted rock", 
+    "A scented candle", 
+    "A sack of relics", 
+    "A painted figurine", 
+    "buttonA",
+    "Sophia's painted rock"),
+
+new Questions (
+    "./images/GG_3.jpg",
+    "14",
+    "What body part of Rose's prized teddy bear doe Sunshine Cadet Daisy send back as a threat?", 
+    "Nose", 
+    "Foot", 
+    "Ear", 
+    "Hand", 
+    "buttonC",
+    "an ear"),
+
+new Questions (
+    "./images/GG_3.jpg",
+    "15",
+    "Name the actresses from youngest to oldest in real life, using their characters' names:", 
+    "Sophia, Dorothy, Blanche, Rose",
+    "Blanche, Sophia, Dorothy, Rose",
+    "Dorothy, Blanche, Sophia, Rose",
+    "Rose, Dorothy, Sophia, Blanche", 
+    "buttonB",
+    "Blanche, Sophia, Dorothy, then Rose"),
 ]
 
 // Make an event listener for each button
 
 function answer () {
     if (choice === qArr[index].correct) {
-        document.getElementById("results").innerHTML = `Great job!`
         score += 100;
+        document.getElementById("results").innerHTML = `Great job!`
     } else {
         document.getElementById("results").innerText = `Wrong! The correct answer is ${qArr[index].rightAns}.`
     }
@@ -84,7 +227,6 @@ let index = 0;
 
 next.addEventListener("click", () => {
     choice = "";
-    // currentQ = nextQ;
     index+=1
     document.getElementById("results").innerHTML = "";
     qArr[index];
