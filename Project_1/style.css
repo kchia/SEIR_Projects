@@ -111,25 +111,32 @@ a {
 }
 
 .trivia {
-    display: inline-flex;
-    /* justify-content: center; */
+    margin: auto;
+    width: 50%
 }
 
 .questions {
-    flex: 1;
+    display: inline-block;
+    justify-content: center;
 }
 
 #triviaQs {
     background-color: #FFC300;
+    /* display: flex; */
     font-size: 35px;
-    flex-wrap: wrap;
+    /* justify-content: center; */
+    margin: auto;
+    width: 50%;
 }
 
 #next {
     /*display: none; */
     font-family: "Abril Fatface", cursive;
     color: #FFC300;
+    text-shadow: 2px 2px 4px #000000;
     text-decoration: none;
-    font-size: 35px;
     text-align: center;
+    font-size: 30px;
+    /* margin: auto;
+    width: 50%; */
 }

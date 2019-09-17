@@ -15,10 +15,13 @@ function selectAns(event) {
     // console.log(event.target.id);
     // Look at the event target, need to use getElementByID
     choice = event.target.id;
-    console.log(choice);
+    // console.log(choice);
 }
 
-document.querySelector(".questions").addEventListener("click", selectAns);
+document.querySelector(".questions").addEventListener("click", (event) => {
+    choice = event.target.id;
+    answer();
+});
 
 
 class Questions {
@@ -45,7 +48,7 @@ new Questions (
     "Shaded Pines", 
     "Shady Pines", 
     "Shady Palms", 
-    "buttonB",
+    "buttonC",
     "Shady Pines"),
 
 new Questions (
@@ -60,52 +63,65 @@ new Questions (
     "It burned down")
 ]
 
-// console.log(qArr[0]);
+// Make an event listener for each button
 
-function answer (choice) {
-    if (choice === this.correct) {
+function answer () {
+    if (choice === qArr[index].correct) {
         document.getElementById("results").innerHTML = `Great job!`
         score += 100;
     } else {
-        document.getElementById("results").innerText = `Wrong! The correct answer is ${this.correct}.`
+        document.getElementById("results").innerText = `Wrong! The correct answer is ${qArr[index].rightAns}.`
     }
 }
 
 // Make a variable for the Next button
 let next = document.querySelector("#next");
-let currentQ = qArr[0];
-let nextQ = currentQ--;
+// let currentQ = qArr[0];
+// let nextQ = currentQ--;
 // make sure to go back and add all images in questions.html with class of images!
-let images = document.getElementsByClassName("images");
+// let images = document.getElementsByClassName("images");
+let index = 0;
 
 next.addEventListener("click", () => {
-    currentQ = nextQ;
-    
+    choice = "";
+    // currentQ = nextQ;
+    index+=1
+    document.getElementById("results").innerHTML = "";
+    qArr[index];
+    console.log(qArr[index]);
+    document.getElementById("pic").src = qArr[index].currentPic;
+    document.getElementById("triviaQs").innerHTML = qArr[index].question;
+    document.getElementById("buttonA").innerHTML = qArr[index].choiceA;
+    document.getElementById("buttonB").innerHTML = qArr[index].choiceB;
+    document.getElementById("buttonC").innerHTML = qArr[index].choiceC;
+    document.getElementById("buttonD").innerHTML = qArr[index].choiceD;
+    // Update score and question number
+    document.getElementById("score").innerHTML = score;
+    document.getElementById("qNum").innerHTML = qArr[index].currentNum;
 });
 
 // Make a function to iterate through the number of questions when button is clicked.
-function advanceQs () {
+function startQs () {
     for (let i = 0; i < qArr.length; i++){
     // event.preventDefault()
+    // console.log(qArr[i]);
     function updateImage () {
-    document.getElementById("pic").src = qArr[i].currentPic;
+    document.getElementById("pic").src = qArr[0].currentPic;
     }
     updateImage();
 
-    document.getElementById("triviaQs").innerHTML = qArr[i].question;
-    document.getElementById("buttonA").innerHTML = qArr[i].choiceA;
-    document.getElementById("buttonB").innerHTML = qArr[i].choiceB;
-    document.getElementById("buttonC").innerHTML = qArr[i].choiceC;
-    document.getElementById("buttonD").innerHTML = qArr[i].choiceD;
+    document.getElementById("triviaQs").innerHTML = qArr[0].question;
+    document.getElementById("buttonA").innerHTML = qArr[0].choiceA;
+    document.getElementById("buttonB").innerHTML = qArr[0].choiceB;
+    document.getElementById("buttonC").innerHTML = qArr[0].choiceC;
+    document.getElementById("buttonD").innerHTML = qArr[0].choiceD;
     // Update score and question number
     document.getElementById("score").innerHTML = score;
-    document.getElementById("qNum").innerHTML = qArr[i].currentNum;
+    document.getElementById("qNum").innerHTML = qArr[0].currentNum;
 
-    answer();
     }
 }
-advanceQs();
-console.log(qArr);
+startQs();
 
 
 
