@@ -20,6 +20,14 @@ function selectAns(event) {
 
 document.querySelector(".questions").addEventListener("click", selectAns);
 
+// function clearAns () {
+//     const userAns = document.querySelector(".questions");
+//     let child = userAns.firstElementChild;
+//     while (child) {
+//         userAns.removeChild(child);
+//         child = userAns.firstElementChild;
+//     }
+// }
 
 class Questions {
     constructor (currentPic, currentNum, question, choiceA, choiceB, choiceC, choiceD, correct, rightAns) {
@@ -60,53 +68,54 @@ new Questions (
     "It burned down")
 ]
 
-// console.log(qArr[0]);
+// Create a variable so that you can make the Next link appear when needed.
+let next = document.getElementById("next");
 
 function answer (choice) {
     if (choice === this.correct) {
+        // Tell them they got it right
         document.getElementById("results").innerHTML = `Great job!`
+        // Increment score by 100 points
         score += 100;
+        // Update score and question number
+        document.getElementById("score").innerHTML = score;
+        // Allow user to advance to the next question using the Next link
+        next.getElementsByClassName.display = "block";
+        // Clear previous choice
+        choice = "";
     } else {
+        // Tell them they're wrong and display correct answer
         document.getElementById("results").innerText = `Wrong! The correct answer is ${this.correct}.`
+        // Allow user to advance to the next question using the Next link
+        next.getElementsByClassName.display = "block";
+        // Clear previous choice
     }
 }
 
-// Make a variable for the Next button
-let next = document.querySelector("#next");
 let currentQ = qArr[0];
-let nextQ = currentQ--;
-// make sure to go back and add all images in questions.html with class of images!
-let images = document.getElementsByClassName("images");
+console.log(currentQ);
 
-next.addEventListener("click", () => {
-    currentQ = nextQ;
-    
-});
-
-// Make a function to iterate through the number of questions when button is clicked.
-function advanceQs () {
-    for (let i = 0; i < qArr.length; i++){
-    // event.preventDefault()
-    function updateImage () {
-    document.getElementById("pic").src = qArr[i].currentPic;
+// Revist this logic on displaying the images.
+function updateImage () {
+    document.getElementById("pic").src = currentQ.currentPic;
     }
-    updateImage();
+updateImage();
 
-    document.getElementById("triviaQs").innerHTML = qArr[i].question;
-    document.getElementById("buttonA").innerHTML = qArr[i].choiceA;
-    document.getElementById("buttonB").innerHTML = qArr[i].choiceB;
-    document.getElementById("buttonC").innerHTML = qArr[i].choiceC;
-    document.getElementById("buttonD").innerHTML = qArr[i].choiceD;
-    // Update score and question number
-    document.getElementById("score").innerHTML = score;
-    document.getElementById("qNum").innerHTML = qArr[i].currentNum;
+function getQ () {
+    // Update current q number and question
+    document.getElementById("qNum").innerHTML = currentQ.currentNum;
+    document.getElementById("triviaQs").innerHTML = currentQ.question;
+    document.getElementById("buttonA").innerHTML = currentQ.choiceA;
+    document.getElementById("buttonB").innerHTML = currentQ.choiceB;
+    document.getElementById("buttonC").innerHTML = currentQ.choiceC;
+    document.getElementById("buttonD").innerHTML = currentQ.choiceD;
 
     answer();
-    }
 }
-advanceQs();
-console.log(qArr);
 
+getQ();
+
+console.log(choice);
 
 
     // Set up a final scoring page
