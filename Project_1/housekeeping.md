@@ -35,11 +35,11 @@ Allow them to play again or exit
  * “...So I’ll say it thrice.”
  * “...Palm trees, sunshine, great sand by the mile!”
  * **“...Blue skies, sunshine, white sand by the mile!”**
-5. Finish this quote: “here are two things in this world a Sicilian knows. When pasta sticks to a wall, it’s done…
+5. Finish this quote: “There are two things in this world a Sicilian knows. When pasta sticks to a wall, it’s done…
  * **“...When a body sticks to cement, it's dead.”**
  * “...When a body sticks to the ground, it’s dead.
  * “...When a body sticks to its clothes, it’s dead.”
- * “...When a body sticks to a court, it’s dead.”
+ * “...When a body sticks to the tennis court, it’s dead.”
 6. What curse did Sophia put on her late husband’s best friend Max?
  * That he tripped over his shoes every morning
  * **That his socks would forever fall down**
