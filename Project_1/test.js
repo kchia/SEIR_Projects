@@ -36,7 +36,7 @@ class Questions {
 // Make a variable for the array of questions/class instances
 const qArr = [
 new Questions (
-    "./images/GG_1.webp",
+    "./images/GG_1.jpeg",
     "1",
     "What is the name of the retirement home where Sophia stayed?", 
     "Shady Business", 
@@ -47,7 +47,7 @@ new Questions (
     "Shady Pines"),
 
 new Questions (
-    "./images/GG_2.jpg",
+    "./images/GG_2.webp",
     "2",
     "Why did Sophia have to leave Shady Pines?", 
     "She violated the terms", 
@@ -57,160 +57,170 @@ new Questions (
     "buttonB",
     "that it burned down"),
 
-// new Questions (
-//     "./images/GG_3.jpg",
-//     "3",
-//     "What tastes great if you eat it while holding your nose?", 
-//     "Herring Krispies", 
-//     "Herring Chunkies", 
-//     "Herring Tarts", 
-//     "Herring Crisps", 
-//     "buttonA",
-//     "Herring Krispies"),
+new Questions (
+    "./images/GG_3.jpg",
+    "3",
+    "What tastes great if you eat it while holding your nose?", 
+    "Herring Krispies", 
+    "Herring Chunkies", 
+    "Herring Tarts", 
+    "Herring Crisps", 
+    "buttonA",
+    "Herring Krispies"),
 
-// new Questions (
-//     "./images/GG_2.jpg",
-//     "4",
-//     "Complete this lyric: Miami, Miami, you’ve got style…", 
-//     "...You’re cuter than an intrauterine.", 
-//     "...So I'll say it thrice.", 
-//     "...Palm trees, sunshine, great sand by the mile.", 
-//     "...Blue skies, sunshine, white sand by the mile.", 
-//     "buttonD",
-//     "...Blue skies, sunshine, white sand by the mile"),
+new Questions (
+    "./images/GG_4.jpg",
+    "4",
+    "Complete this lyric: Miami, Miami, you’ve got style…", 
+    "...You’re cuter than an intrauterine.", 
+    "...So I'll say it thrice.", 
+    "...Palm trees, sunshine, great sand by the mile.", 
+    "...Blue skies, sunshine, white sand by the mile.", 
+    "buttonD",
+    "...Blue skies, sunshine, white sand by the mile"),
     
-// new Questions (
-//     "./images/GG_2.jpg",
-//     "5",
-//     "Finish this quote: “There are two things in this world a Sicilian knows. When pasta sticks to a wall, it’s done…", 
-//     "...When a body sticks to cement, it's dead.", 
-//     "...When a body sticks to the ground, it's dead", 
-//     "...When a body sticks to its clothes, it's dead.", 
-//     "...When a body sticks to the tennis court, it's dead.", 
-//     "buttonA",
-//     "...When a body sticks to cement, it's dead"),
+new Questions (
+    "./images/GG_5.jpg",
+    "5",
+    "Finish this quote: “There are two things in this world a Sicilian knows. When pasta sticks to a wall, it’s done…", 
+    "...When a body sticks to cement, it's dead.", 
+    "...When a body sticks to the ground, it's dead", 
+    "...When a body sticks to its clothes, it's dead.", 
+    "...When a body sticks to the tennis court, it's dead.", 
+    "buttonA",
+    "...When a body sticks to cement, it's dead"),
 
-// new Questions (
-//     "./images/GG_3.jpg",
-//     "6",
-//     "What curse did Sophia put on her late husband's best friend, Max?", 
-//     "That he tripped over his shoes every morning", 
-//     "That his socks would forever fall down.", 
-//     "That all his wives would cheat on his", 
-//     "That his ears would never pop on an airplane", 
-//     "buttonB",
-//     "that his socks would forever fall down"),
+new Questions (
+    "./images/GG_6.jpg",
+    "6",
+    "What curse did Sophia put on her late husband's best friend, Max?", 
+    "That he tripped over his shoes every morning", 
+    "That his socks would forever fall down.", 
+    "That all his wives would cheat on his", 
+    "That his ears would never pop on an airplane", 
+    "buttonB",
+    "that his socks would forever fall down"),
 
-// new Questions (
-//     "./images/GG_3.jpg",
-//     "7",
-//     "What profession did Sophia's brother/Dorothy's uncle Angelo falsely claim?", 
-//     "Vacuum Salesman", 
-//     "Entrepreneur", 
-//     "Lawyer", 
-//     "Priest", 
-//     "buttonD",
-//     "priest"),
+new Questions (
+    "./images/GG_7.jpg",
+    "7",
+    "What profession did Sophia's brother/Dorothy's uncle Angelo falsely claim?", 
+    "Vacuum Salesman", 
+    "Entrepreneur", 
+    "Lawyer", 
+    "Priest", 
+    "buttonD",
+    "priest"),
 
-// new Questions (
-//     "./images/GG_3.jpg",
-//     "8",
-//     "How did Rose's late husband Charlie die?", 
-//     "Of old age", 
-//     "In a car accident", 
-//     "Of a heart attack during an act of intimacy", 
-//     "While serving the country", 
-//     "buttonC",
-//     "a heart attack during an act of intimacy"),
+new Questions (
+    "./images/GG_8.png",
+    "8",
+    "How did Rose's late husband Charlie die?", 
+    "Of old age", 
+    "In a car accident", 
+    "Of a heart attack during an act of intimacy", 
+    "While serving the country", 
+    "buttonC",
+    "a heart attack during an act of intimacy"),
 
-// new Questions (
-//     "./images/GG_3.jpg",
-//     "9",
-//     "What nickname did Sophia’s late husband tell her to call Dorothy that only he would know?", 
-//     "Moose", 
-//     "Spumoni Face", 
-//     "Tortellini", 
-//     "Spaghetti Face", 
-//     "buttonB",
-//     "Spumoni Face"),
+new Questions (
+    "./images/GG_9.jpg",
+    "9",
+    "What nickname did Sophia’s late husband tell her to call Dorothy that only he would know?", 
+    "Moose", 
+    "Spumoni Face", 
+    "Tortellini", 
+    "Spaghetti Face", 
+    "buttonB",
+    "Spumoni Face"),
 
-// new Questions (
-//     "./images/GG_3.jpg",
-//     "10",
-//     "Actor Harold Gould played Rose's boyfriend twice! What were their names?", 
-//     "Arnie/Miles", 
-//     "Arnold/Milton", 
-//     "Arnie/Milton", 
-//     "Arnold/Miles", 
-//     "buttonA",
-//     "Arnie/Miles"),
+new Questions (
+    "./images/GG_10.JPG",
+    "10",
+    "Actor Harold Gould played Rose's boyfriend twice! What were their names?", 
+    "Arnie/Miles", 
+    "Arnold/Milton", 
+    "Arnie/Milton", 
+    "Arnold/Miles", 
+    "buttonA",
+    "Arnie/Miles"),
 
-// new Questions (
-//     "./images/GG_3.jpg",
-//     "11",
-//     "What type of prize animal did Rose's Uncle Higgeblotter leave her upon his death?", 
-//     "Horse", 
-//     "Goat", 
-//     "Sheep", 
-//     "Pig", 
-//     "buttonD",
-//     "that Baby was a pig"),
+new Questions (
+    "./images/GG_11.jpg",
+    "11",
+    "What type of prize animal did Rose's Uncle Higgeblotter leave her upon his death?", 
+    "Horse", 
+    "Goat", 
+    "Sheep", 
+    "Pig", 
+    "buttonD",
+    "that Baby was a pig"),
 
-// new Questions (
-//     "./images/GG_3.jpg",
-//     "12",
-//     "Who played the officer who got shot during an undercover sting in which the Girls helped?", 
-//     "Burt Reynolds", 
-//     "George Clooney", 
-//     "Mario Lopez", 
-//     "Leslie Nielsen", 
-//     "buttonB",
-//     "George Clooney"),
+new Questions (
+    "./images/GG_12.jpg",
+    "12",
+    "Who played the officer who got shot during an undercover sting in which the Girls helped?", 
+    "Burt Reynolds", 
+    "George Clooney", 
+    "Mario Lopez", 
+    "Leslie Nielsen", 
+    "buttonB",
+    "George Clooney"),
 
-// new Questions (
-//     "./images/GG_3.jpg",
-//     "13",
-//     "What item does Dorothy find under her bed that th housekeeper Marguerite says is to help her get restful sleep?", 
-//     "A painted rock", 
-//     "A scented candle", 
-//     "A sack of relics", 
-//     "A painted figurine", 
-//     "buttonA",
-//     "Sophia's painted rock"),
+new Questions (
+    "./images/GG_13.jpg",
+    "13",
+    "What item does Dorothy find under her bed that th housekeeper Marguerite says is to help her get restful sleep?", 
+    "A painted rock", 
+    "A scented candle", 
+    "A sack of relics", 
+    "A painted figurine", 
+    "buttonA",
+    "Sophia's painted rock"),
 
-// new Questions (
-//     "./images/GG_3.jpg",
-//     "14",
-//     "What body part of Rose's prized teddy bear doe Sunshine Cadet Daisy send back as a threat?", 
-//     "Nose", 
-//     "Foot", 
-//     "Ear", 
-//     "Hand", 
-//     "buttonC",
-//     "an ear"),
+new Questions (
+    "./images/GG_14.jpg",
+    "14",
+    "What body part of Rose's prized teddy bear doe Sunshine Cadet Daisy send back as a threat?", 
+    "Nose", 
+    "Foot", 
+    "Ear", 
+    "Hand", 
+    "buttonC",
+    "an ear"),
 
-// new Questions (
-//     "./images/GG_3.jpg",
-//     "15",
-//     "Name the actresses from youngest to oldest in real life, using their characters' names:", 
-//     "Sophia, Dorothy, Blanche, Rose",
-//     "Blanche, Sophia, Dorothy, Rose",
-//     "Dorothy, Blanche, Sophia, Rose",
-//     "Rose, Dorothy, Sophia, Blanche", 
-//     "buttonB",
-//     "Blanche, Sophia, Dorothy, then Rose"),
+new Questions (
+    "./images/GG_15.webp",
+    "15",
+    "Name the actresses from youngest to oldest in real life, using their characters' names:", 
+    "Sophia, Dorothy, Blanche, Rose",
+    "Blanche, Sophia, Dorothy, Rose",
+    "Dorothy, Blanche, Sophia, Rose",
+    "Rose, Dorothy, Sophia, Blanche", 
+    "buttonB",
+    "Blanche, Sophia, Dorothy, then Rose"),
 ]
 
 const openResults = document.getElementById("finResults");
 const modal = document.getElementById("modal");
+const closeResults = document.getElementById("close");
+const playAgain = document.getElementById("again");
 
 // Establish functions to open and close modal
 const openModal = () => {
     modal.style.display = "block";
 };
 
+const closeModal = (evt) => {
+    evt.preventDefault();
+    modal.style.display = "none";
+}
+
+
+
 // Add event listeners to buttons to run above functions
 openResults.addEventListener("click", openModal);
+closeResults.addEventListener("click", closeModal);
 
 // Make a function to evaluate the user's choice, whether it is right or wrong, and award points accordingly.
 function answer () {
@@ -229,9 +239,10 @@ let next = document.querySelector("#next");
 
 // Make an event listener to advance to the next question and clear the previous question's stored data
 console.log(index);
+console.log(qArr.length);
 
 next.addEventListener("click", () => {
-    if (index < qArr.length) {
+    if (index < qArr.length-1) {
     choice = "";
     index+=1
     openResults.style.display = "none";
@@ -246,12 +257,10 @@ next.addEventListener("click", () => {
     document.getElementById("score").innerHTML = score;
     document.getElementById("qNum").innerHTML = qArr[index].currentNum;
 } else {
-    if (index === (qArr.length-1)){
-        next.addEventListener("click", () => {
-            openResults.style.display = "block";
-        })
+    next.style.display = "none";
+    openResults.style.display = "block";
     }
-}})
+})
 
 // Make a function to iterate through the number of questions when button is clicked.
 function startQs () {
@@ -275,11 +284,37 @@ function startQs () {
 }
 startQs();
 
-
-
-// Set up a final scoring page
+// Set up a final scoring modal
     // Display user's total score
     // Display matching GG and witty comment on how they relate
+
+class Final {
+    constructor (resultsPic, totalScore = score, resultsPara) {
+        this.resultsPic = resultsPic;
+        this.totalScore = totalScore;
+        this.resultsPara = resultsPara;
+    }   
+}
+
+// Make a variable for the array of questions/class instances
+const finalResults = [
+new Final (
+    "./images/Rose.jpg",
+    "Rose Paragraph here"),
+
+new Final (
+    "./images/Blanche.jpg",
+    "Blanche Paragraph here"),
+
+new Final (
+    "./images/Sophia.jpg",
+    "Sophia Paragraph here"),
+
+new Final (
+    "./images/Dorothy.jpg",
+    "Dorothy Paragraph here")
+]
+    
 
     // Include two buttons
         // One button to exit the game which takes you back to the start up page

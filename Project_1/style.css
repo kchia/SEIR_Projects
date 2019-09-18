@@ -10,7 +10,7 @@ html {
     background-size: cover; 
 }
 
-h1, header, #results {
+h1, header {
     font-family: 'Charm', cursive;
     font-size: 50px;
     text-align: center;
@@ -69,7 +69,7 @@ button:hover{
 
 a {
     font-family: "Abril Fatface", cursive;
-    text-align: left;
+    /* text-align: left; */
     font-size: 10px;
     text-decoration: none;
     color: #65BF3E;
@@ -129,14 +129,28 @@ a {
     width: 50%;
 }
 
+#results {
+    font-family: 'Charm', cursive;
+    font-size: 50px;
+    text-align: center;
+    color: #FFC300;
+    text-shadow: 2px 2px 4px #000000;
+} 
+
 #next {
-    /*display: none; */
+
     font-family: "Abril Fatface", cursive;
     color: #FFC300;
     text-shadow: 2px 2px 4px #000000;
     text-decoration: none;
     text-align: center;
-    font-size: 30px;
-    /* margin: auto;
-    width: 50%; */
+    font-size: 40px;
+    display: inline-block;
+    /* order: 1; */
+}
+
+.feedback {
+    display: inline-block;
+    justify-content: center;
+    width: 100%;
 }
