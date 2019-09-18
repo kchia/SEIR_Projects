@@ -259,6 +259,27 @@ next.addEventListener("click", () => {
 } else {
     next.style.display = "none";
     openResults.style.display = "block";
+    if (score <= 300){
+        document.getElementById("resultsHead").innerHTML = finalResults[0].resultsName;
+        document.getElementById("tryingHard").src = finalResults[0].resultsFace;
+        document.getElementById("resultsPgr").innerHTML = finalResults[0].resultsPara;
+        document.getElementById("tryingHard").alt = finalResults[0].resultsAlt;
+    } else if (score < 800) {
+            document.getElementById("resultsHead").innerHTML = finalResults[1].resultsName;
+            document.getElementById("tryingHard").src = finalResults[1].resultsFace;
+            document.getElementById("resultsPgr").innerHTML = finalResults[1].resultsPara;
+            document.getElementById("tryingHard").alt = finalResults[1].resultsAlt;
+    } else if (score < 1200){
+            document.getElementById("resultsHead").innerHTML = finalResults[2].resultsName;
+            document.getElementById("tryingHard").src = finalResults[2].resultsFace;
+            document.getElementById("resultsPgr").innerHTML = finalResults[2].resultsPara;
+            document.getElementById("tryingHard").alt = finalResults[2].resultsAlt;
+    } else {
+            document.getElementById("resultsHead").innerHTML = finalResults[3].resultsName;
+            document.getElementById("tryingHard").src = finalResults[3].resultsFace;
+            document.getElementById("resultsPgr").innerHTML = finalResults[3].resultsPara;
+            document.getElementById("tryingHard").alt = finalResults[3].resultsAlt;
+        }
     }
 })
 
@@ -289,32 +310,41 @@ startQs();
     // Display matching GG and witty comment on how they relate
 
 class Final {
-    constructor (resultsPic, totalScore = score, resultsPara) {
-        this.resultsPic = resultsPic;
-        this.totalScore = totalScore;
+    constructor (resultsName, resultsFace, resultsPara, resultsAlt) {
+        this.resultsName = resultsName;
+        this.resultsFace = resultsFace;
+        // this.totalScore = totalScore;
         this.resultsPara = resultsPara;
+        this.resultsAlt = resultsAlt;
     }   
 }
 
-// Make a variable for the array of questions/class instances
+// Make a variable for the array of results/class instances
 const finalResults = [
 new Final (
+    "You scored like Rose Nylund",
     "./images/Rose.jpg",
-    "Rose Paragraph here"),
+    "What a ditz! Did you even watch this show?",
+    "Rose Nylund of The Golden Girls"),
 
 new Final (
+    "You scored like Blanche Deveraux",
     "./images/Blanche.jpg",
-    "Blanche Paragraph here"),
+    "Well, some people are only good at one thing, and this ain’t it for you.",
+    "Blanche Devereaux of The Golden Girls"),
 
 new Final (
+    "You scored like Sophia Petrillo",
     "./images/Sophia.jpg",
-    "Sophia Paragraph here"),
+    "While you have a sharp wit, it wasn’t quite sharp enough for The Golden Girls Trivia!", 
+    "Sophia Petrillo of The Golden Girls"),
 
 new Final (
+    "You scored like Dorothy Zbornak",
     "./images/Dorothy.jpg",
-    "Dorothy Paragraph here")
+    "Well, you’ve certainly got the brains to be a substitute teacher! Congratulazioni!", 
+    "Dorothy Zbornak of The Golden Girls")
 ]
-    
 
     // Include two buttons
         // One button to exit the game which takes you back to the start up page

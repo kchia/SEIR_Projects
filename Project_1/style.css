@@ -12,7 +12,7 @@ html {
 
 h1, header {
     font-family: 'Charm', cursive;
-    font-size: 50px;
+    font-size: 75px;
     text-align: center;
     color: #FFC300;
     text-shadow: 2px 2px 4px #000000;
@@ -138,7 +138,7 @@ a {
 } 
 
 #next {
-
+    width: 100%; 
     font-family: "Abril Fatface", cursive;
     color: #FFC300;
     text-shadow: 2px 2px 4px #000000;
@@ -153,4 +153,13 @@ a {
     display: inline-block;
     justify-content: center;
     width: 100%;
+}
+
+#results-modal {
+    background-color: #FFF4CF;
+    height: 700px;
+    width: 650px;
+    margin: 150px auto;
+    padding: 0 25px;
+    justify-content: center;
 }
