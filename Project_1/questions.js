@@ -5,25 +5,20 @@
  
 // Create a variable for the user's score
 let score = 0;
-let choice;
 // Create variable to store user's choice.
-// Add an event listener to store the value of the choice variable when clicked
-// Use Event Bubbling 
+let choice;
 
-// google how to get value button html
+// Abstract the clicked button, and add an event listener to store the value of the choice variable when clicked
 function selectAns(event) {
-    // console.log(event.target.id);
-    // Look at the event target, need to use getElementByID
     choice = event.target.id;
-    // console.log(choice);
 }
-
 document.querySelector(".questions").addEventListener("click", (event) => {
     choice = event.target.id;
     answer();
 });
 
-
+// Make a Questions object so that you can iterate through an array of instances
+    // Update the image with each question
 class Questions {
     constructor (currentPic, currentNum, question, choiceA, choiceB, choiceC, choiceD, correct, rightAns) {
         this.currentPic = currentPic;
@@ -38,7 +33,7 @@ class Questions {
     }   
 }
 
-// Make a variable for the number of questions/class instances
+// Make a variable for the array of questions/class instances
 const qArr = [
 new Questions (
     "./images/GG_1.webp",
@@ -206,8 +201,7 @@ new Questions (
     "Blanche, Sophia, Dorothy, then Rose"),
 ]
 
-// Make an event listener for each button
-
+// Make a function to evaluate the user's choice, whether it is right or wrong, and award points accordingly.
 function answer () {
     if (choice === qArr[index].correct) {
         score += 100;
@@ -216,20 +210,19 @@ function answer () {
         document.getElementById("results").innerText = `Wrong! The correct answer is ${qArr[index].rightAns}.`
     }
 }
+// Make a variable for the class instance index for an event listener to update everything once the next button is clicked.
+let index = 0;
 
 // Make a variable for the Next button
 let next = document.querySelector("#next");
-// let currentQ = qArr[0];
-// let nextQ = currentQ--;
-// make sure to go back and add all images in questions.html with class of images!
-// let images = document.getElementsByClassName("images");
-let index = 0;
 
+// Make an event listener to advance to the next question and clear the previous question's stored data
 next.addEventListener("click", () => {
     choice = "";
     index+=1
+    console.log(index);
     document.getElementById("results").innerHTML = "";
-    qArr[index];
+    // qArr[index];
     console.log(qArr[index]);
     document.getElementById("pic").src = qArr[index].currentPic;
     document.getElementById("triviaQs").innerHTML = qArr[index].question;
@@ -245,8 +238,6 @@ next.addEventListener("click", () => {
 // Make a function to iterate through the number of questions when button is clicked.
 function startQs () {
     for (let i = 0; i < qArr.length; i++){
-    // event.preventDefault()
-    // console.log(qArr[i]);
     function updateImage () {
     document.getElementById("pic").src = qArr[0].currentPic;
     }
@@ -267,9 +258,10 @@ startQs();
 
 
 
-    // Set up a final scoring page
-        // Display user's total score
-        // Display matching GG and witty comment on how they relate
-        // Include two buttons
-            // One button to exit the game which takes you back to the start up page
-            // Another button to the questions
+// Set up a final scoring page
+    // Display user's total score
+    // Display matching GG and witty comment on how they relate
+
+    // Include two buttons
+        // One button to exit the game which takes you back to the start up page
+        // Another button to the questions
