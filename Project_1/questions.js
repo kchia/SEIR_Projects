@@ -213,14 +213,20 @@ const openModal = () => {
 
 const closeModal = (evt) => {
     evt.preventDefault();
-    modal.style.display = "none";
 }
 
-
-
+const restart = (evt) => {
+    evt.preventDefault()
+    modal.style.display = "none";
+    startQs();
+}
+// Include two buttons in the results modal
+        // One button to exit the game which takes you back to the start up page
+        // Another button to the questions
 // Add event listeners to buttons to run above functions
 openResults.addEventListener("click", openModal);
 closeResults.addEventListener("click", closeModal);
+playAgain.addEventListener("click", restart);
 
 // Make a function to evaluate the user's choice, whether it is right or wrong, and award points accordingly.
 function answer () {
@@ -238,8 +244,6 @@ let index = 0;
 let next = document.querySelector("#next");
 
 // Make an event listener to advance to the next question and clear the previous question's stored data
-console.log(index);
-console.log(qArr.length);
 
 next.addEventListener("click", (event) => {
     if (index < qArr.length-1) {
@@ -346,6 +350,4 @@ new Final (
     "Dorothy Zbornak of The Golden Girls")
 ]
 
-    // Include two buttons
-        // One button to exit the game which takes you back to the start up page
-        // Another button to the questions
+    
