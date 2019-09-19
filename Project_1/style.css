@@ -3,7 +3,7 @@ html {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover; 
+    background-size: cover;
 }
 
 h1 {
@@ -38,11 +38,11 @@ p {
 }
 
 .golden {
-font-family: 'Charm', cursive;
-font-size: 26px;
-text-align: center;
-color: #FFC300;
-text-shadow: 1px 1px 2px #000000;
+    font-family: 'Charm', cursive;
+    font-size: 26px;
+    text-align: center;
+    color: #FFC300;
+    text-shadow: 1px 1px 2px #000000;
 }
 
 img {
@@ -50,7 +50,13 @@ img {
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
-    
+}
+
+#graphic {
+    height: 350px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 button {
@@ -61,14 +67,13 @@ button {
     border-radius: 2px;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: 'Abril Fatface',sans-serif;
+    font-family: 'Abril Fatface', sans-serif;
     font-size: 20px;
-    color:#65BF3E;
+    color: #65BF3E;
     text-align: center;
 }
 
 .here {
-    /* margin: 0 auto; */
     width: 100%;
     text-decoration: none;
     display: inline-flex;
@@ -76,8 +81,9 @@ button {
     padding: 5px 12px;
     text-align: center;
 }
-button:hover{
-    color:#FFC300;
+
+button:hover {
+    color: #FFC300;
     border: 1.5px solid #FFC300;
 }
 
@@ -96,7 +102,7 @@ a {
     text-decoration: none;
     margin: 0 0 0 300;
     color: white;
-    position: absolute;    
+    position: absolute;
 }
 
 #modal {
@@ -119,17 +125,22 @@ a {
     padding: 0 25px;
 }
 
-
 .questions {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: minmax(75px, auto);
+    padding: 1em;
     /* justify-content: center; */
 }
 
-.nested > button {
+.nested {
     grid-column: 5/7;
-    align-items: start;
+    width: 100%;
+}
+
+.nested > button {
+    display: block;
+    justify-items: start;
 }
 
 #qTag {
@@ -148,7 +159,8 @@ a {
 
 #pic {
     grid-column: 2/5;
-
+    max-width: 75%;
+    height: auto;
 }
 
 .feedback {
@@ -165,14 +177,13 @@ a {
     color: #FFC300;
     text-shadow: 2px 2px 4px #000000;
     grid-column: 2/3;
-} 
+}
 
 #next {
     width: 100%;
     font-family: "Charm", cursive;
     color: #FFC300;
     text-shadow: 2px 2px 4px #000000;
-    /* text-decoration: none; */
     text-align: center;
     font-size: 45px;
     grid-column: 2/3;
@@ -192,4 +203,3 @@ a {
     display: inline-grid;
     grid-template-columns: 1fr 1fr;
 }
-
