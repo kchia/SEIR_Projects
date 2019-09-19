@@ -132,9 +132,7 @@ a {
 
 #triviaQs {
     background-color: #FFC300;
-    /* display: flex; */
     font-size: 35px;
-    /* justify-content: center; */
     margin: auto;
     width: 50%;
 }

@@ -36,7 +36,7 @@ class Questions {
 // Make a variable for the array of questions/class instances
 const qArr = [
 new Questions (
-    "./images/GG_1.webp",
+    "./images/GG_1.jpeg",
     "1",
     "What is the name of the retirement home where Sophia stayed?", 
     "Shady Business", 
@@ -47,7 +47,7 @@ new Questions (
     "Shady Pines"),
 
 new Questions (
-    "./images/GG_2.jpg",
+    "./images/GG_2.webp",
     "2",
     "Why did Sophia have to leave Shady Pines?", 
     "She violated the terms", 
@@ -69,7 +69,7 @@ new Questions (
     "Herring Krispies"),
 
 new Questions (
-    "./images/GG_2.jpg",
+    "./images/GG_4.jpg",
     "4",
     "Complete this lyric: Miami, Miami, you’ve got style…", 
     "...You’re cuter than an intrauterine.", 
@@ -80,7 +80,7 @@ new Questions (
     "...Blue skies, sunshine, white sand by the mile"),
     
 new Questions (
-    "./images/GG_2.jpg",
+    "./images/GG_5.jpg",
     "5",
     "Finish this quote: “There are two things in this world a Sicilian knows. When pasta sticks to a wall, it’s done…", 
     "...When a body sticks to cement, it's dead.", 
@@ -91,7 +91,7 @@ new Questions (
     "...When a body sticks to cement, it's dead"),
 
 new Questions (
-    "./images/GG_3.jpg",
+    "./images/GG_6.jpg",
     "6",
     "What curse did Sophia put on her late husband's best friend, Max?", 
     "That he tripped over his shoes every morning", 
@@ -102,7 +102,7 @@ new Questions (
     "that his socks would forever fall down"),
 
 new Questions (
-    "./images/GG_3.jpg",
+    "./images/GG_7.jpg",
     "7",
     "What profession did Sophia's brother/Dorothy's uncle Angelo falsely claim?", 
     "Vacuum Salesman", 
@@ -113,7 +113,7 @@ new Questions (
     "priest"),
 
 new Questions (
-    "./images/GG_3.jpg",
+    "./images/GG_8.png",
     "8",
     "How did Rose's late husband Charlie die?", 
     "Of old age", 
@@ -124,7 +124,7 @@ new Questions (
     "a heart attack during an act of intimacy"),
 
 new Questions (
-    "./images/GG_3.jpg",
+    "./images/GG_9.jpg",
     "9",
     "What nickname did Sophia’s late husband tell her to call Dorothy that only he would know?", 
     "Moose", 
@@ -135,7 +135,7 @@ new Questions (
     "Spumoni Face"),
 
 new Questions (
-    "./images/GG_3.jpg",
+    "./images/GG_10.JPG",
     "10",
     "Actor Harold Gould played Rose's boyfriend twice! What were their names?", 
     "Arnie/Miles", 
@@ -146,7 +146,7 @@ new Questions (
     "Arnie/Miles"),
 
 new Questions (
-    "./images/GG_3.jpg",
+    "./images/GG_11.jpg",
     "11",
     "What type of prize animal did Rose's Uncle Higgeblotter leave her upon his death?", 
     "Horse", 
@@ -157,7 +157,7 @@ new Questions (
     "that Baby was a pig"),
 
 new Questions (
-    "./images/GG_3.jpg",
+    "./images/GG_12.jpg",
     "12",
     "Who played the officer who got shot during an undercover sting in which the Girls helped?", 
     "Burt Reynolds", 
@@ -168,7 +168,7 @@ new Questions (
     "George Clooney"),
 
 new Questions (
-    "./images/GG_3.jpg",
+    "./images/GG_13.jpg",
     "13",
     "What item does Dorothy find under her bed that th housekeeper Marguerite says is to help her get restful sleep?", 
     "A painted rock", 
@@ -179,7 +179,7 @@ new Questions (
     "Sophia's painted rock"),
 
 new Questions (
-    "./images/GG_3.jpg",
+    "./images/GG_14.jpg",
     "14",
     "What body part of Rose's prized teddy bear doe Sunshine Cadet Daisy send back as a threat?", 
     "Nose", 
@@ -190,7 +190,7 @@ new Questions (
     "an ear"),
 
 new Questions (
-    "./images/GG_3.jpg",
+    "./images/GG_15.webp",
     "15",
     "Name the actresses from youngest to oldest in real life, using their characters' names:", 
     "Sophia, Dorothy, Blanche, Rose",
@@ -200,6 +200,27 @@ new Questions (
     "buttonB",
     "Blanche, Sophia, Dorothy, then Rose"),
 ]
+
+const openResults = document.getElementById("finResults");
+const modal = document.getElementById("modal");
+const closeResults = document.getElementById("close");
+const playAgain = document.getElementById("again");
+
+// Establish functions to open and close modal
+const openModal = () => {
+    modal.style.display = "block";
+};
+
+const closeModal = (evt) => {
+    evt.preventDefault();
+    modal.style.display = "none";
+}
+
+
+
+// Add event listeners to buttons to run above functions
+openResults.addEventListener("click", openModal);
+closeResults.addEventListener("click", closeModal);
 
 // Make a function to evaluate the user's choice, whether it is right or wrong, and award points accordingly.
 function answer () {
@@ -217,13 +238,15 @@ let index = 0;
 let next = document.querySelector("#next");
 
 // Make an event listener to advance to the next question and clear the previous question's stored data
+console.log(index);
+console.log(qArr.length);
+
 next.addEventListener("click", () => {
+    if (index < qArr.length-1) {
     choice = "";
     index+=1
-    console.log(index);
+    openResults.style.display = "none";
     document.getElementById("results").innerHTML = "";
-    // qArr[index];
-    console.log(qArr[index]);
     document.getElementById("pic").src = qArr[index].currentPic;
     document.getElementById("triviaQs").innerHTML = qArr[index].question;
     document.getElementById("buttonA").innerHTML = qArr[index].choiceA;
@@ -233,7 +256,32 @@ next.addEventListener("click", () => {
     // Update score and question number
     document.getElementById("score").innerHTML = score;
     document.getElementById("qNum").innerHTML = qArr[index].currentNum;
-});
+} else {
+    next.style.display = "none";
+    openResults.style.display = "block";
+    if (score <= 300){
+        document.getElementById("resultsHead").innerHTML = finalResults[0].resultsName;
+        document.getElementById("tryingHard").src = finalResults[0].resultsFace;
+        document.getElementById("resultsPgr").innerHTML = finalResults[0].resultsPara;
+        document.getElementById("tryingHard").alt = finalResults[0].resultsAlt;
+    } else if (score < 800) {
+            document.getElementById("resultsHead").innerHTML = finalResults[1].resultsName;
+            document.getElementById("tryingHard").src = finalResults[1].resultsFace;
+            document.getElementById("resultsPgr").innerHTML = finalResults[1].resultsPara;
+            document.getElementById("tryingHard").alt = finalResults[1].resultsAlt;
+    } else if (score < 1200){
+            document.getElementById("resultsHead").innerHTML = finalResults[2].resultsName;
+            document.getElementById("tryingHard").src = finalResults[2].resultsFace;
+            document.getElementById("resultsPgr").innerHTML = finalResults[2].resultsPara;
+            document.getElementById("tryingHard").alt = finalResults[2].resultsAlt;
+    } else {
+            document.getElementById("resultsHead").innerHTML = finalResults[3].resultsName;
+            document.getElementById("tryingHard").src = finalResults[3].resultsFace;
+            document.getElementById("resultsPgr").innerHTML = finalResults[3].resultsPara;
+            document.getElementById("tryingHard").alt = finalResults[3].resultsAlt;
+        }
+    }
+})
 
 // Make a function to iterate through the number of questions when button is clicked.
 function startQs () {
@@ -243,6 +291,7 @@ function startQs () {
     }
     updateImage();
 
+    openResults.style.display = "none";
     document.getElementById("triviaQs").innerHTML = qArr[0].question;
     document.getElementById("buttonA").innerHTML = qArr[0].choiceA;
     document.getElementById("buttonB").innerHTML = qArr[0].choiceB;
@@ -256,11 +305,46 @@ function startQs () {
 }
 startQs();
 
-
-
-// Set up a final scoring page
+// Set up a final scoring modal
     // Display user's total score
     // Display matching GG and witty comment on how they relate
+
+class Final {
+    constructor (resultsName, resultsFace, resultsPara, resultsAlt) {
+        this.resultsName = resultsName;
+        this.resultsFace = resultsFace;
+        // this.totalScore = totalScore;
+        this.resultsPara = resultsPara;
+        this.resultsAlt = resultsAlt;
+    }   
+}
+
+// Make a variable for the array of results/class instances
+const finalResults = [
+new Final (
+    "You scored like Rose Nylund",
+    "./images/Rose.jpg",
+    "What a ditz! Did you even watch this show?",
+    "Rose Nylund of The Golden Girls"),
+
+new Final (
+    "You scored like Blanche Deveraux",
+    "./images/Blanche.jpg",
+    "Well, some people are only good at one thing, and this ain’t it for you.",
+    "Blanche Devereaux of The Golden Girls"),
+
+new Final (
+    "You scored like Sophia Petrillo",
+    "./images/Sophia.jpg",
+    "While you have a sharp wit, it wasn’t quite sharp enough for The Golden Girls Trivia!", 
+    "Sophia Petrillo of The Golden Girls"),
+
+new Final (
+    "You scored like Dorothy Zbornak",
+    "./images/Dorothy.jpg",
+    "Well, you’ve certainly got the brains to be a substitute teacher! Congratulazioni!", 
+    "Dorothy Zbornak of The Golden Girls")
+]
 
     // Include two buttons
         // One button to exit the game which takes you back to the start up page
