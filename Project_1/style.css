@@ -12,6 +12,7 @@ h1 {
     text-align: center;
     color: #FFC300;
     text-shadow: 2px 2px 4px #000000;
+    margin: 50.250px auto 0;
 }
 
 h2 {
@@ -29,6 +30,7 @@ h3 {
     text-align: center;
     color: white;
     text-shadow: 2px 2px 4px #000000;
+    margin: 15px auto;
 }
 
 p {
@@ -138,27 +140,34 @@ a {
     width: 100%;
 }
 
-.nested > button {
-    display: block;
-    justify-items: start;
+.nested>button {
+    margin: 0 15px 15px 15px;
+    text-align: left;
 }
 
 #qTag {
     grid-column: 1/4;
+    background-color: #FFC300;
+    border: 2px solid black;
+    margin: 24px 0 0 0;
 }
 
 #scoreTag {
     grid-column: 4/7;
+    background-color: #FFC300;
+    border: 2px solid black;
+    margin: 24px 0 0 0;
 }
 
 #triviaQs {
-    grid-column: 2/6;
+    grid-column: 1/7;
     background-color: #FFC300;
     font-size: 35px;
+    margin: 0 0 24px 0;
 }
 
 #pic {
-    grid-column: 2/5;
+    grid-column: 1/5;
     max-width: 75%;
     height: auto;
 }
@@ -167,7 +176,6 @@ a {
     display: grid;
     grid-template-columns: repeat(3, 20% 60% 20%);
     grid-template-rows: minmax(75px, auto);
-    /* justify-content: center; */
 }
 
 #results {
