@@ -170,4 +170,11 @@ a {
     margin: 150px auto;
     padding: 0 25px;
     justify-content: center;
+    display: grid;
 }
+
+.container {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+}
+

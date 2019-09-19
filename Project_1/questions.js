@@ -68,137 +68,137 @@ new Questions (
     "buttonA",
     "Herring Krispies"),
 
-new Questions (
-    "./images/GG_4.jpg",
-    "4",
-    "Complete this lyric: Miami, Miami, you’ve got style…", 
-    "...You’re cuter than an intrauterine.", 
-    "...So I'll say it thrice.", 
-    "...Palm trees, sunshine, great sand by the mile.", 
-    "...Blue skies, sunshine, white sand by the mile.", 
-    "buttonD",
-    "...Blue skies, sunshine, white sand by the mile"),
+// new Questions (
+//     "./images/GG_4.jpg",
+//     "4",
+//     "Complete this lyric: Miami, Miami, you’ve got style…", 
+//     "...You’re cuter than an intrauterine.", 
+//     "...So I'll say it thrice.", 
+//     "...Palm trees, sunshine, great sand by the mile.", 
+//     "...Blue skies, sunshine, white sand by the mile.", 
+//     "buttonD",
+//     "...Blue skies, sunshine, white sand by the mile"),
     
-new Questions (
-    "./images/GG_5.jpg",
-    "5",
-    "Finish this quote: “There are two things in this world a Sicilian knows. When pasta sticks to a wall, it’s done…", 
-    "...When a body sticks to cement, it's dead.", 
-    "...When a body sticks to the ground, it's dead", 
-    "...When a body sticks to its clothes, it's dead.", 
-    "...When a body sticks to the tennis court, it's dead.", 
-    "buttonA",
-    "...When a body sticks to cement, it's dead"),
+// new Questions (
+//     "./images/GG_5.jpg",
+//     "5",
+//     "Finish this quote: “There are two things in this world a Sicilian knows. When pasta sticks to a wall, it’s done…", 
+//     "...When a body sticks to cement, it's dead.", 
+//     "...When a body sticks to the ground, it's dead", 
+//     "...When a body sticks to its clothes, it's dead.", 
+//     "...When a body sticks to the tennis court, it's dead.", 
+//     "buttonA",
+//     "...When a body sticks to cement, it's dead"),
 
-new Questions (
-    "./images/GG_6.jpg",
-    "6",
-    "What curse did Sophia put on her late husband's best friend, Max?", 
-    "That he tripped over his shoes every morning", 
-    "That his socks would forever fall down.", 
-    "That all his wives would cheat on his", 
-    "That his ears would never pop on an airplane", 
-    "buttonB",
-    "that his socks would forever fall down"),
+// new Questions (
+//     "./images/GG_6.jpg",
+//     "6",
+//     "What curse did Sophia put on her late husband's best friend, Max?", 
+//     "That he tripped over his shoes every morning", 
+//     "That his socks would forever fall down.", 
+//     "That all his wives would cheat on his", 
+//     "That his ears would never pop on an airplane", 
+//     "buttonB",
+//     "that his socks would forever fall down"),
 
-new Questions (
-    "./images/GG_7.jpg",
-    "7",
-    "What profession did Sophia's brother/Dorothy's uncle Angelo falsely claim?", 
-    "Vacuum Salesman", 
-    "Entrepreneur", 
-    "Lawyer", 
-    "Priest", 
-    "buttonD",
-    "priest"),
+// new Questions (
+//     "./images/GG_7.jpg",
+//     "7",
+//     "What profession did Sophia's brother/Dorothy's uncle Angelo falsely claim?", 
+//     "Vacuum Salesman", 
+//     "Entrepreneur", 
+//     "Lawyer", 
+//     "Priest", 
+//     "buttonD",
+//     "priest"),
 
-new Questions (
-    "./images/GG_8.png",
-    "8",
-    "How did Rose's late husband Charlie die?", 
-    "Of old age", 
-    "In a car accident", 
-    "Of a heart attack during an act of intimacy", 
-    "While serving the country", 
-    "buttonC",
-    "a heart attack during an act of intimacy"),
+// new Questions (
+//     "./images/GG_8.png",
+//     "8",
+//     "How did Rose's late husband Charlie die?", 
+//     "Of old age", 
+//     "In a car accident", 
+//     "Of a heart attack during an act of intimacy", 
+//     "While serving the country", 
+//     "buttonC",
+//     "a heart attack during an act of intimacy"),
 
-new Questions (
-    "./images/GG_9.jpg",
-    "9",
-    "What nickname did Sophia’s late husband tell her to call Dorothy that only he would know?", 
-    "Moose", 
-    "Spumoni Face", 
-    "Tortellini", 
-    "Spaghetti Face", 
-    "buttonB",
-    "Spumoni Face"),
+// new Questions (
+//     "./images/GG_9.jpg",
+//     "9",
+//     "What nickname did Sophia’s late husband tell her to call Dorothy that only he would know?", 
+//     "Moose", 
+//     "Spumoni Face", 
+//     "Tortellini", 
+//     "Spaghetti Face", 
+//     "buttonB",
+//     "Spumoni Face"),
 
-new Questions (
-    "./images/GG_10.JPG",
-    "10",
-    "Actor Harold Gould played Rose's boyfriend twice! What were their names?", 
-    "Arnie/Miles", 
-    "Arnold/Milton", 
-    "Arnie/Milton", 
-    "Arnold/Miles", 
-    "buttonA",
-    "Arnie/Miles"),
+// new Questions (
+//     "./images/GG_10.JPG",
+//     "10",
+//     "Actor Harold Gould played Rose's boyfriend twice! What were their names?", 
+//     "Arnie/Miles", 
+//     "Arnold/Milton", 
+//     "Arnie/Milton", 
+//     "Arnold/Miles", 
+//     "buttonA",
+//     "Arnie/Miles"),
 
-new Questions (
-    "./images/GG_11.jpg",
-    "11",
-    "What type of prize animal did Rose's Uncle Higgeblotter leave her upon his death?", 
-    "Horse", 
-    "Goat", 
-    "Sheep", 
-    "Pig", 
-    "buttonD",
-    "that Baby was a pig"),
+// new Questions (
+//     "./images/GG_11.jpg",
+//     "11",
+//     "What type of prize animal did Rose's Uncle Higgeblotter leave her upon his death?", 
+//     "Horse", 
+//     "Goat", 
+//     "Sheep", 
+//     "Pig", 
+//     "buttonD",
+//     "that Baby was a pig"),
 
-new Questions (
-    "./images/GG_12.jpg",
-    "12",
-    "Who played the officer who got shot during an undercover sting in which the Girls helped?", 
-    "Burt Reynolds", 
-    "George Clooney", 
-    "Mario Lopez", 
-    "Leslie Nielsen", 
-    "buttonB",
-    "George Clooney"),
+// new Questions (
+//     "./images/GG_12.jpg",
+//     "12",
+//     "Who played the officer who got shot during an undercover sting in which the Girls helped?", 
+//     "Burt Reynolds", 
+//     "George Clooney", 
+//     "Mario Lopez", 
+//     "Leslie Nielsen", 
+//     "buttonB",
+//     "George Clooney"),
 
-new Questions (
-    "./images/GG_13.jpg",
-    "13",
-    "What item does Dorothy find under her bed that th housekeeper Marguerite says is to help her get restful sleep?", 
-    "A painted rock", 
-    "A scented candle", 
-    "A sack of relics", 
-    "A painted figurine", 
-    "buttonA",
-    "Sophia's painted rock"),
+// new Questions (
+//     "./images/GG_13.jpg",
+//     "13",
+//     "What item does Dorothy find under her bed that th housekeeper Marguerite says is to help her get restful sleep?", 
+//     "A painted rock", 
+//     "A scented candle", 
+//     "A sack of relics", 
+//     "A painted figurine", 
+//     "buttonA",
+//     "Sophia's painted rock"),
 
-new Questions (
-    "./images/GG_14.jpg",
-    "14",
-    "What body part of Rose's prized teddy bear doe Sunshine Cadet Daisy send back as a threat?", 
-    "Nose", 
-    "Foot", 
-    "Ear", 
-    "Hand", 
-    "buttonC",
-    "an ear"),
+// new Questions (
+//     "./images/GG_14.jpg",
+//     "14",
+//     "What body part of Rose's prized teddy bear doe Sunshine Cadet Daisy send back as a threat?", 
+//     "Nose", 
+//     "Foot", 
+//     "Ear", 
+//     "Hand", 
+//     "buttonC",
+//     "an ear"),
 
-new Questions (
-    "./images/GG_15.webp",
-    "15",
-    "Name the actresses from youngest to oldest in real life, using their characters' names:", 
-    "Sophia, Dorothy, Blanche, Rose",
-    "Blanche, Sophia, Dorothy, Rose",
-    "Dorothy, Blanche, Sophia, Rose",
-    "Rose, Dorothy, Sophia, Blanche", 
-    "buttonB",
-    "Blanche, Sophia, Dorothy, then Rose"),
+// new Questions (
+//     "./images/GG_15.webp",
+//     "15",
+//     "Name the actresses from youngest to oldest in real life, using their characters' names:", 
+//     "Sophia, Dorothy, Blanche, Rose",
+//     "Blanche, Sophia, Dorothy, Rose",
+//     "Dorothy, Blanche, Sophia, Rose",
+//     "Rose, Dorothy, Sophia, Blanche", 
+//     "buttonB",
+//     "Blanche, Sophia, Dorothy, then Rose"),
 ]
 
 const openResults = document.getElementById("finResults");
@@ -241,7 +241,7 @@ let next = document.querySelector("#next");
 console.log(index);
 console.log(qArr.length);
 
-next.addEventListener("click", () => {
+next.addEventListener("click", (event) => {
     if (index < qArr.length-1) {
     choice = "";
     index+=1
@@ -257,28 +257,29 @@ next.addEventListener("click", () => {
     document.getElementById("score").innerHTML = score;
     document.getElementById("qNum").innerHTML = qArr[index].currentNum;
 } else {
+    event.preventDefault();
     next.style.display = "none";
     openResults.style.display = "block";
     if (score <= 300){
         document.getElementById("resultsHead").innerHTML = finalResults[0].resultsName;
-        document.getElementById("tryingHard").src = finalResults[0].resultsFace;
+        document.getElementById("finalImg").src = finalResults[0].resultsFace;
         document.getElementById("resultsPgr").innerHTML = finalResults[0].resultsPara;
-        document.getElementById("tryingHard").alt = finalResults[0].resultsAlt;
+        document.getElementById("finalImg").alt = finalResults[0].resultsAlt;
     } else if (score < 800) {
             document.getElementById("resultsHead").innerHTML = finalResults[1].resultsName;
-            document.getElementById("tryingHard").src = finalResults[1].resultsFace;
+            document.getElementById("finalImg").src = finalResults[1].resultsFace;
             document.getElementById("resultsPgr").innerHTML = finalResults[1].resultsPara;
-            document.getElementById("tryingHard").alt = finalResults[1].resultsAlt;
+            document.getElementById("finalImg").alt = finalResults[1].resultsAlt;
     } else if (score < 1200){
             document.getElementById("resultsHead").innerHTML = finalResults[2].resultsName;
-            document.getElementById("tryingHard").src = finalResults[2].resultsFace;
+            document.getElementById("finalImg").src = finalResults[2].resultsFace;
             document.getElementById("resultsPgr").innerHTML = finalResults[2].resultsPara;
-            document.getElementById("tryingHard").alt = finalResults[2].resultsAlt;
+            document.getElementById("finalImg").alt = finalResults[2].resultsAlt;
     } else {
             document.getElementById("resultsHead").innerHTML = finalResults[3].resultsName;
-            document.getElementById("tryingHard").src = finalResults[3].resultsFace;
+            document.getElementById("finalImg").src = finalResults[3].resultsFace;
             document.getElementById("resultsPgr").innerHTML = finalResults[3].resultsPara;
-            document.getElementById("tryingHard").alt = finalResults[3].resultsAlt;
+            document.getElementById("finalImg").alt = finalResults[3].resultsAlt;
         }
     }
 })
@@ -313,7 +314,6 @@ class Final {
     constructor (resultsName, resultsFace, resultsPara, resultsAlt) {
         this.resultsName = resultsName;
         this.resultsFace = resultsFace;
-        // this.totalScore = totalScore;
         this.resultsPara = resultsPara;
         this.resultsAlt = resultsAlt;
     }   
@@ -328,7 +328,7 @@ new Final (
     "Rose Nylund of The Golden Girls"),
 
 new Final (
-    "You scored like Blanche Deveraux",
+    "You scored like Blanche Devereaux",
     "./images/Blanche.jpg",
     "Well, some people are only good at one thing, and this ain’t it for you.",
     "Blanche Devereaux of The Golden Girls"),
