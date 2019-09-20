@@ -10,7 +10,7 @@ Below are screenshots of the basic framework used to build the game, and the gam
 
 ![image]('trivia_wireframe.jpg')
 
-![image]('GG_Game_Screenshot.jpg') 
+![image](GG_Game_Screenshot.jpg)
 
 #### Features 
 For this first project, I featured using a modal (a secondary, functioning window) for both the game's instructions and the final results. I also featured displaying the user's results for each question in an otherwise empty space based on their answer selection.
