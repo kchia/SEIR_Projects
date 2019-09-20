@@ -1,7 +1,7 @@
 // Display start up page with Title, Image of the GGs, instructions, and button to play the game
-    // Use a timed modal for the directions with an exit button
+// Use a timed modal for the directions with an exit button
 
-    // Establish necessary variables to allow modal to appear and disappear on demand
+// Establish necessary variables to allow modal to appear and disappear on demand
 const openDirections = document.getElementById("directions");
 const modal = document.getElementById("modal");
 const closeDirections = document.getElementById("close");
