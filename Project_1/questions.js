@@ -84,7 +84,7 @@ new Questions (
     "5",
     "Finish this quote: “There are two things in this world a Sicilian knows. When pasta sticks to a wall, it’s done…", 
     "...When a body sticks to cement, it's dead.", 
-    "...When a body sticks to the ground, it's dead", 
+    "...When a body sticks to the ground, it's dead.", 
     "...When a body sticks to its clothes, it's dead.", 
     "...When a body sticks to the tennis court, it's dead.", 
     "buttonA",
@@ -204,7 +204,6 @@ new Questions (
 const openResults = document.getElementById("finResults");
 const modal = document.getElementById("modal");
 const closeResults = document.getElementById("close");
-const playAgain = document.getElementById("again");
 
 // Establish functions to open and close modal
 const openModal = () => {
@@ -215,18 +214,13 @@ const closeModal = (evt) => {
     evt.preventDefault();
 }
 
-const restart = (evt) => {
-    evt.preventDefault()
-    modal.style.display = "none";
-    startQs();
-}
+
 // Include two buttons in the results modal
         // One button to exit the game which takes you back to the start up page
         // Another button to the questions
 // Add event listeners to buttons to run above functions
 openResults.addEventListener("click", openModal);
 closeResults.addEventListener("click", closeModal);
-playAgain.addEventListener("click", restart);
 
 // Make a function to evaluate the user's choice, whether it is right or wrong, and award points accordingly.
 function answer () {
