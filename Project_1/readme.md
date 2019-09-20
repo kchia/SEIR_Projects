@@ -20,4 +20,5 @@ This project features HTML, CSS, JavaScript with DOM manipulation.
 
 #### Getting Started
 Get started playing the game here: https://emme313.github.io/SEIR_Projects/Project_1/questions.html#
+
 Review all the code here: https://github.com/Emme313/SEIR_Projects/tree/master/Project_1
