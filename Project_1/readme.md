@@ -7,5 +7,5 @@ This is the first, independent project completed in General Assmebly's Software 
 
 #### Brief Example
 Below is a recording of the game rendered in the browser.
-![Screenshot of The Golden Girls Trivia Game](GG_Game_Screenshot) 
+![Screenshot of The Golden Girls Trivia Game](./GG_Game_Screenshot.png) 
 
