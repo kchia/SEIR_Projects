@@ -6,7 +6,9 @@
 This is the first, independent project completed in General Assmebly's Software Enginnering Immersive program and it covers basic HTML, CSS, and JavaScript code and functionality, respectively. This project also features JavaSript Document Object Model (DOM) manipulation.
 
 #### Brief Example
-Below is a screenshot of the game rendered in the browser.
+Below are screenshots of the basic framework used to build the game, and the game rendered in the browser.
+
+![image]('trivia_wireframe.jpg')
 
 ![image]('GG_Game_Screenshot.jpg') 
 
@@ -16,3 +18,6 @@ For this first project, I featured using a modal (a secondary, functioning windo
 #### Technologies Used
 This project features HTML, CSS, JavaScript with DOM manipulation.
 
+#### Getting Started
+Get started playing the game here: [The Golden Girls Trivia Game][https://emme313.github.io/SEIR_Projects/Project_1/questions.html#]
+Review all the code here: [The Golden Girls Trivia Game Code][https://github.com/Emme313/SEIR_Projects/tree/master/Project_1]
