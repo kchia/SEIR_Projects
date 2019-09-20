@@ -170,7 +170,7 @@ const qArr = [
     new Questions(
         "./images/GG_13.jpg",
         "13",
-        "What item does Dorothy find under her bed that th housekeeper Marguerite says is to help her get restful sleep?",
+        "What item does Dorothy find under her bed that the housekeeper Marguerite says is to help her get restful sleep?",
         "A painted rock",
         "A scented candle",
         "A sack of relics",
@@ -181,7 +181,7 @@ const qArr = [
     new Questions(
         "./images/GG_14.jpg",
         "14",
-        "What body part of Rose's prized teddy bear doe Sunshine Cadet Daisy send back as a threat?",
+        "What body part of Rose's prized teddy bear does Sunshine Cadet Daisy send back as a threat?",
         "Nose",
         "Foot",
         "Ear",
