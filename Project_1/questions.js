@@ -12,7 +12,7 @@ let choice;
 function selectAns(event) {
     choice = event.target.id;
 }
-document.querySelector(".nested").addEventListener("click", (event) => {
+document.querySelector(".nested").addEventListener("click", event => {
     choice = event.target.id;
     answer();
 });
@@ -20,10 +20,21 @@ document.querySelector(".nested").addEventListener("click", (event) => {
 // Make a Questions object so that you can iterate through an array of instances
 // Update the image with each question
 class Questions {
-    constructor(currentPic, currentNum, question, choiceA, choiceB, choiceC, choiceD, correct, rightAns) {
+    constructor(
+        currentPic,
+        currentNum,
+        question,
+        choiceA,
+        choiceB,
+        choiceC,
+        choiceD,
+        correct,
+        rightAns
+    ) {
         this.currentPic = currentPic;
         this.currentNum = currentNum;
         this.question = question;
+        // HC: consider putting all the answer choices inside a "choices" object
         this.choiceA = choiceA;
         this.choiceB = choiceB;
         this.choiceC = choiceC;
@@ -32,8 +43,9 @@ class Questions {
         this.rightAns = rightAns;
     }
 }
-
+// HC: keep this file lean by moving your questions into a separate json file
 // Make a variable for the array of questions/class instances
+// HC: consider using a more descriptive variable name (e.g., questionsArr)
 const qArr = [
     new Questions(
         "./images/GG_1.jpeg",
@@ -44,7 +56,8 @@ const qArr = [
         "Shady Pines",
         "Shady Palms",
         "buttonC",
-        "Shady Pines"),
+        "Shady Pines"
+    ),
 
     new Questions(
         "./images/GG_2.webp",
@@ -55,7 +68,8 @@ const qArr = [
         "Her roommate died",
         "The facility was shut down",
         "buttonB",
-        "that it burned down"),
+        "that it burned down"
+    ),
 
     new Questions(
         "./images/GG_3.jpg",
@@ -66,7 +80,8 @@ const qArr = [
         "Herring Tarts",
         "Herring Crisps",
         "buttonA",
-        "Herring Krispies"),
+        "Herring Krispies"
+    ),
 
     new Questions(
         "./images/GG_4.jpg",
@@ -77,7 +92,8 @@ const qArr = [
         "...Palm trees, sunshine, great sand by the mile.",
         "...Blue skies, sunshine, white sand by the mile.",
         "buttonD",
-        "...Blue skies, sunshine, white sand by the mile"),
+        "...Blue skies, sunshine, white sand by the mile"
+    ),
 
     new Questions(
         "./images/GG_5.jpg",
@@ -88,7 +104,8 @@ const qArr = [
         "...When a body sticks to its clothes, it's dead.",
         "...When a body sticks to the tennis court, it's dead.",
         "buttonA",
-        "...When a body sticks to cement, it's dead"),
+        "...When a body sticks to cement, it's dead"
+    ),
 
     new Questions(
         "./images/GG_6.jpg",
@@ -99,7 +116,8 @@ const qArr = [
         "That all his wives would cheat",
         "That his ears would never pop on an airplane",
         "buttonB",
-        "that his socks would forever fall down"),
+        "that his socks would forever fall down"
+    ),
 
     new Questions(
         "./images/GG_7.jpg",
@@ -110,7 +128,8 @@ const qArr = [
         "Lawyer",
         "Priest",
         "buttonD",
-        "priest"),
+        "priest"
+    ),
 
     new Questions(
         "./images/GG_8.png",
@@ -121,7 +140,8 @@ const qArr = [
         "Of a heart attack during an act of intimacy",
         "While serving the country",
         "buttonC",
-        "a heart attack during an act of intimacy"),
+        "a heart attack during an act of intimacy"
+    ),
 
     new Questions(
         "./images/GG_9.jpg",
@@ -132,7 +152,8 @@ const qArr = [
         "Tortellini",
         "Spaghetti Face",
         "buttonB",
-        "Spumoni Face"),
+        "Spumoni Face"
+    ),
 
     new Questions(
         "./images/GG_10.JPG",
@@ -143,7 +164,8 @@ const qArr = [
         "Arnie/Milton",
         "Arnold/Miles",
         "buttonA",
-        "Arnie/Miles"),
+        "Arnie/Miles"
+    ),
 
     new Questions(
         "./images/GG_11.jpg",
@@ -154,7 +176,8 @@ const qArr = [
         "Sheep",
         "Pig",
         "buttonD",
-        "that Baby was a pig"),
+        "that Baby was a pig"
+    ),
 
     new Questions(
         "./images/GG_12.jpg",
@@ -165,7 +188,8 @@ const qArr = [
         "Mario Lopez",
         "Leslie Nielsen",
         "buttonB",
-        "George Clooney"),
+        "George Clooney"
+    ),
 
     new Questions(
         "./images/GG_13.jpg",
@@ -176,7 +200,8 @@ const qArr = [
         "A sack of relics",
         "A painted figurine",
         "buttonA",
-        "Sophia's painted rock"),
+        "Sophia's painted rock"
+    ),
 
     new Questions(
         "./images/GG_14.jpg",
@@ -187,7 +212,8 @@ const qArr = [
         "Ear",
         "Hand",
         "buttonC",
-        "an ear"),
+        "an ear"
+    ),
 
     new Questions(
         "./images/GG_15.webp",
@@ -198,8 +224,9 @@ const qArr = [
         "Dorothy, Blanche, Sophia, Rose",
         "Rose, Dorothy, Sophia, Blanche",
         "buttonB",
-        "Blanche, Sophia, Dorothy, then Rose"),
-]
+        "Blanche, Sophia, Dorothy, then Rose"
+    )
+];
 
 const openResults = document.getElementById("finResults");
 const modal = document.getElementById("modal");
@@ -210,9 +237,9 @@ const openModal = () => {
     modal.style.display = "block";
 };
 
-const closeModal = (evt) => {
+const closeModal = evt => {
     evt.preventDefault();
-}
+};
 
 // Include two buttons in the results modal
 // One button to exit the game which takes you back to the start up page
@@ -225,9 +252,11 @@ closeResults.addEventListener("click", closeModal);
 function answer() {
     if (choice === qArr[index].correct) {
         score += 100;
-        document.getElementById("results").innerHTML = `Great job!`
+        document.getElementById("results").innerHTML = `Great job!`;
     } else {
-        document.getElementById("results").innerText = `Wrong! The correct answer is ${qArr[index].rightAns}.`
+        document.getElementById(
+            "results"
+        ).innerText = `Wrong! The correct answer is ${qArr[index].rightAns}.`;
     }
 }
 // Make a variable for the class instance index for an event listener to update everything once the next button is clicked.
@@ -238,10 +267,10 @@ let next = document.querySelector("#next");
 
 // Make an event listener to advance to the next question and clear the previous question's stored data
 
-next.addEventListener("click", (event) => {
+next.addEventListener("click", event => {
     if (index < qArr.length - 1) {
         choice = "";
-        index += 1
+        index += 1;
         openResults.style.display = "none";
         document.getElementById("results").innerHTML = "";
         document.getElementById("pic").src = qArr[index].currentPic;
@@ -257,29 +286,46 @@ next.addEventListener("click", (event) => {
         event.preventDefault();
         next.style.display = "none";
         openResults.style.display = "block";
+        // HC: consider refactoring lines 291 - 298 into a helper function
         if (score <= 300) {
-            document.getElementById("resultsHead").innerHTML = finalResults[0].resultsName;
-            document.getElementById("finalImg").src = finalResults[0].resultsFace;
-            document.getElementById("resultsPgr").innerHTML = finalResults[0].resultsPara;
-            document.getElementById("finalImg").alt = finalResults[0].resultsAlt;
+            document.getElementById("resultsHead").innerHTML =
+                finalResults[0].resultsName;
+            document.getElementById("finalImg").src =
+                finalResults[0].resultsFace;
+            document.getElementById("resultsPgr").innerHTML =
+                finalResults[0].resultsPara;
+            document.getElementById("finalImg").alt =
+                finalResults[0].resultsAlt;
         } else if (score < 800) {
-            document.getElementById("resultsHead").innerHTML = finalResults[1].resultsName;
-            document.getElementById("finalImg").src = finalResults[1].resultsFace;
-            document.getElementById("resultsPgr").innerHTML = finalResults[1].resultsPara;
-            document.getElementById("finalImg").alt = finalResults[1].resultsAlt;
+            document.getElementById("resultsHead").innerHTML =
+                finalResults[1].resultsName;
+            document.getElementById("finalImg").src =
+                finalResults[1].resultsFace;
+            document.getElementById("resultsPgr").innerHTML =
+                finalResults[1].resultsPara;
+            document.getElementById("finalImg").alt =
+                finalResults[1].resultsAlt;
         } else if (score < 1200) {
-            document.getElementById("resultsHead").innerHTML = finalResults[2].resultsName;
-            document.getElementById("finalImg").src = finalResults[2].resultsFace;
-            document.getElementById("resultsPgr").innerHTML = finalResults[2].resultsPara;
-            document.getElementById("finalImg").alt = finalResults[2].resultsAlt;
+            document.getElementById("resultsHead").innerHTML =
+                finalResults[2].resultsName;
+            document.getElementById("finalImg").src =
+                finalResults[2].resultsFace;
+            document.getElementById("resultsPgr").innerHTML =
+                finalResults[2].resultsPara;
+            document.getElementById("finalImg").alt =
+                finalResults[2].resultsAlt;
         } else {
-            document.getElementById("resultsHead").innerHTML = finalResults[3].resultsName;
-            document.getElementById("finalImg").src = finalResults[3].resultsFace;
-            document.getElementById("resultsPgr").innerHTML = finalResults[3].resultsPara;
-            document.getElementById("finalImg").alt = finalResults[3].resultsAlt;
+            document.getElementById("resultsHead").innerHTML =
+                finalResults[3].resultsName;
+            document.getElementById("finalImg").src =
+                finalResults[3].resultsFace;
+            document.getElementById("resultsPgr").innerHTML =
+                finalResults[3].resultsPara;
+            document.getElementById("finalImg").alt =
+                finalResults[3].resultsAlt;
         }
     }
-})
+});
 
 // Make a function to iterate through the number of questions when button is clicked.
 function startQs() {
@@ -298,7 +344,6 @@ function startQs() {
         // Update score and question number
         document.getElementById("score").innerHTML = score;
         document.getElementById("qNum").innerHTML = qArr[0].currentNum;
-
     }
 }
 startQs();
@@ -316,29 +361,34 @@ class Final {
     }
 }
 
+// HC: move finalResults to a separate file to keep the current file lean
 // Make a variable for the array of results/class instances
 const finalResults = [
     new Final(
         "You scored like Rose Nylund",
         "./images/Rose.jpg",
         "What a ditz! Did you even watch this show?",
-        "Rose Nylund of The Golden Girls"),
+        "Rose Nylund of The Golden Girls"
+    ),
 
     new Final(
         "You scored like Blanche Devereaux",
         "./images/Blanche.jpg",
         "Well, some people are only good at one thing, and this ain’t it for you.",
-        "Blanche Devereaux of The Golden Girls"),
+        "Blanche Devereaux of The Golden Girls"
+    ),
 
     new Final(
         "You scored like Sophia Petrillo",
         "./images/Sophia.jpg",
         "While you have a sharp wit, it wasn’t quite sharp enough for The Golden Girls Trivia!",
-        "Sophia Petrillo of The Golden Girls"),
+        "Sophia Petrillo of The Golden Girls"
+    ),
 
     new Final(
         "You scored like Dorothy Zbornak",
         "./images/Dorothy.jpg",
         "Well, you’ve certainly got the brains to be a substitute teacher! Congratulazioni!",
-        "Dorothy Zbornak of The Golden Girls")
-]
+        "Dorothy Zbornak of The Golden Girls"
+    )
+];
